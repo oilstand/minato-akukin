@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%_ var includePath = "../include/" _%>
+<%- include(includePath+"_header.ejs") %>
+<body style="margin:0;padding:0;">
+
+<%- include(includePath+"_leftmenu.ejs") %>
+    <style>
+        .right-main {
+            background-image: url('./minatoaqua_bg.webp');
+        }
+        table, tr, td {
+            border:solid 1px black;
+        }
+    </style>
+    <div class="right-main">
+        <h2 style="text-align:center;margin:0;">グッズ</h2>
+        <div style="display:flex;max-width:1000px;margin:0 auto;">
+            <table style="width: 720px;margin: 16px auto;">
+                <tbody>
+                    <tr>
+                        <td>年月日予定</td>
+                        <td><a href="#" target="_blank" rel="noopener noreferrer"></a></td>
+                        <td></td>
+                    </tr>
+                    <!--tr>
+                        <td>年月日公開</td>
+                        <td><a href="" target="_blank" rel="noopener noreferrer">「」</a></td>
+                        <td></td>
+                    </tr-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

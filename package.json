@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ejs-cli": "^2.2.3"
+  },
+  "scripts": {
+    "build:ejs": "ejs-cli --base-dir ./src/ \"*.ejs\" --out dest/"
+  }
+}
