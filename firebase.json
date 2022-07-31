@@ -1,0 +1,5 @@
+{
+    "hosting": {
+      "public": "dest/src"
+    }
+  }
