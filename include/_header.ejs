@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
-    
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="content-language" content="ja">
-    <meta name="viewport" content="width=1100,user-scalable=no,shrink-to-fit=yes">
-    <title>湊あくあのホームページ【非公式】</title>
+    <meta name="viewport" content="width=1300,user-scalable=no,shrink-to-fit=yes">
+    <title><%= title == '' ? "湊あくあのホームページ【非公式】" : title + "｜湊あくあのホームページ【非公式】" %></title>
+
+    <meta property="og:url" content="https://minato.akukin.jp/<%= url %>" />
+    <meta property="og:title" content="<%= title == '' ? "湊あくあのホームページ【非公式】" : title + "｜湊あくあのホームページ【非公式】" %>" />
+    <meta property="og:description" content="湊あくあの非公式ホームページ。" />
+    <meta property="og:site_name" content="湊あくあのホームページ【非公式】" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="summary_large_image">
+    <meta property="og:image" content="https://minato.akukin.jp/<%= ogimage == "" ? "minatoakukin_ogp.png" : ogimage %>" />
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0953P9Z3SD"></script>
     <script>

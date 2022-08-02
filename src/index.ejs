@@ -1,5 +1,10 @@
 <%_ var includePath = "../include/" _%>
-<%- include(includePath+"_header.ejs") %>
+<% var pageData = {
+    url: 'index.html',
+    title: "",
+    ogimage: ""
+}; %>
+<%- include(includePath+"_header.ejs", pageData) %>
 <body style="margin:0;padding:0;">
 
 <%- include(includePath+"_leftmenu.ejs") %>
