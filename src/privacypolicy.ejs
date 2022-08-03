@@ -1,0 +1,35 @@
+<%_ var includePath = "../include/" _%>
+<% var pageData = {
+    url: 'privacypolicy.html',
+    title: "プライバシーポリシー",
+    ogimage: ""
+}; %>
+<%- include(includePath+"_header.ejs", pageData) %>
+<body style="margin:0;padding:0;">
+
+<%- include(includePath+"_leftmenu.ejs") %>
+    <style>
+        .right-main {
+            background-image: url('./minatoaqua_bg_pp.webp');
+        }
+        table, tr, td {
+            border:solid 1px black;
+        }
+    </style>
+    <div class="right-main">
+        <h2 style="text-align:center;margin:0;">プライバシーポリシー</h2>
+        <div style="max-width:1000px;margin:0 auto;">
+            <p>
+                アクセス解析ツールについて<br>
+                当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
+            </p>
+            <p>
+                Googleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており個人を特定するものではありません。<br>
+                この機能はCookieを無効にすることで収集を拒否することが出来ます。Cookieの無効化状態はお使いのブラウザの設定をご確認ください。<br>
+                この規約に関しては<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener noreferrer">Google アナリティクス利用規約</a>をご確認ください。
+            </p>
+        </div>
+    </div>
+    <%- include(includePath+"_footer.ejs") %>
+</body>
+</html>
